@@ -8,6 +8,15 @@
   <link rel="icon" href="favicon.png" type="image/png" />
   <link rel="stylesheet" href="nav-style.css" />
 </head>
+
+  <script>
+  fetch("footer.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("footer").innerHTML = data;
+    });
+</script>
+  
 <body>
   <nav>
     <div class="nav-inner">
